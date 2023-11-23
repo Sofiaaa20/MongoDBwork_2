@@ -1,0 +1,159 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Dougourmet",
+    price: 100,
+    category: "Concentrado Perros",
+    image: "https://supermercadocomunal.com/49326-large_default/purina-dogourmet-carne-parr-1-kg.jpg" 
+},
+  {
+    _id: 2,
+    name: "Agility Gold",
+    price: 20,
+    category: "Concentrado Perros",
+    image: "https://ecommerce.micorral.com/backend/admin/backend/web/archivosDelCliente/items/images/20220209110618-Perros-Alimento-seco-para-perros-AGILITY-GOLD-GRANDES-ADULTOS-X-3-KG-1246202202091106187587.png"
+
+  },
+
+  {
+    _id: 3,
+    name: "Chunky",
+    price: 120,
+    category: "Concentrado Perros",
+    image: "https://www.agrocampo.com.co/media/catalog/product/cache/c49bee17ef1a166135589f0329fd61b1/1/1/111100173-v1-min.jpg" 
+},
+  {
+    _id: 4,
+    name: "Equilibrio",
+    price: 120,
+    category: "Concentrado Perros",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTeMSRkk9c_aIdmb3FCg9KzFEJYtpje3Od3g&usqp=CAU"
+  },
+
+  {
+    _id: 5,
+    name: "Doc Chow",
+    price: 120,
+    category: "Concentrado Perros",
+    image: "https://cdn1.totalcommerce.cloud/homesentry/product-zoom/es/concentrado-perro-dog-chow-4-kg-carne-pequeno-1.webp"
+  },
+
+  {
+    _id: 6,
+    name: "Nutra Nuggets",
+    price: 120,
+    category: "Concentrado Perros",
+    image: "https://i.linio.com/p/8dc1587da83268df892ecec818fc4826-product.jpg"
+  },
+
+  {
+    _id: 7,
+    name: "Small Dog",
+    price: 120,
+    category: "Concentrado Perros",
+    image: "https://valenciaj.co/ps/1042/alimento-para-perros-comida-concentrado-para-perros-razas-pequenas-kirkland-9-kilos.jpg"
+  },
+
+  {
+    _id: 8,
+    name: "CanAmor",
+    price: 120,
+    category: "Aseo",
+    image: "https://valenciaj.co/ps/1042/alimento-para-perros-comida-concentrado-para-perros-razas-pequenas-kirkland-9-kilos.jpg"
+
+  },
+
+  {
+    _id: 9,
+    name: "Asuntol",
+    price: 120,
+    category: "Aseo",
+    image: "https://valenciaj.co/ps/1042/alimento-para-perros-comida-concentrado-para-perros-razas-pequenas-kirkland-9-kilos.jpg"
+  },
+  {
+    _id: 10,
+    name: "Clorhexin Jabon",
+    price: 120,
+    category: "Aseo",
+    image: "https://animalscenter.com/1624-large_default/clorhexin-jabon-antiseptico-y-medicado-para-perros-y-gatos-100-g.jpg"
+
+  },
+  {
+    _id: 11,
+    name: "Vetriderm",
+    price: 120,
+    category: "Aseo",
+    image: "https://animalscenter.com/1624-large_default/clorhexin-jabon-antiseptico-y-medicado-para-perros-y-gatos-100-g.jpg"
+
+  },
+  {
+    _id: 12,
+    name: "Edo DermaVet",
+    price: 120,
+    category: "Aseo",
+    image: "https://laboratoriosedo.com/wp-content/uploads/2017/12/dermavet_ppal.png"
+
+  },
+  {
+    _id: 13,
+    name: "DonKat",
+    price: 120,
+    category: "Concentrado Gato",
+    image: "https://lh3.googleusercontent.com/CYoCRPdCHBvlzCDc1ugw_G-UQCNLgt-2o_E6Cw7MZ2ohU79Lw4A3Qst9dtPZ17m6b38lJxIKy-eSlaHGDYnhREWqMAHUHasntSMdz8Y6DuYsJSE=s360"
+  },
+  {
+    _id: 14,
+    name: "Mirringo",
+    price: 120,
+    category: "Concentrado Gato",
+    image: "https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/1/1/111111428-v1-min.jpg"
+  },
+  {
+    _id: 15,
+    name: "Felix",
+    price: 120,
+    category: "Concentrado Gato",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTGKxmXV3rFEEZQZUadJ0gxNi5UQuihkosbjk8ViOdgVv39GXiCb9_K2grjW8JHApH10&usqp=CAU"
+  },
+  {
+    _id: 16,
+    name: "Agility Gold",
+    price: 120,
+    category: "Concentrado Gato",
+    image: "https://www.tierragro.com/cdn/shop/products/ook_c6f17eca-aef1-4075-817d-48f35c7385fe_1024x.jpg?v=1624545108"
+  },
+  {
+    _id: 17,
+    name: "Dalí",
+    price: 120,
+    category: "Concentrado Gato",
+    image: "https://aratiendas.com/wp-content/uploads/2021/07/9881-7704269115347-1.jpg"
+  },
+  {
+    _id: 18,
+    name: "Collar Perros",
+    price: 120,
+    category: "Collares",
+    image: "https://www.estilopets.cl/wp-content/uploads/2021/08/Pack-Collar-de-gato-cafe-con-lunares-rosados-Winkle.jpg"
+  },
+  {
+    _id: 19,
+    name: "Correa Perros",
+    price: 120,
+    category: "Collares",
+    image: "https://www.estilopets.cl/wp-content/uploads/2021/08/Pack-collar-de-gato-negro-con-puntos-de-colores-Felix.jpg"
+  },
+  {
+    _id: 20,
+    name: "Collar Gatos",
+    price: 120,
+    category: "Collares",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5sQmhlsi_k7-OgqRj84EIPpwWJBKvezGfRbVNwQZJjbzkZMkIUXiEZDVerlwXOFXkde0&usqp=CAU"
+  }
+])
